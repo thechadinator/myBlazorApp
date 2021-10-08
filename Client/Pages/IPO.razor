@@ -1,0 +1,45 @@
+﻿@page "/IPO"
+<!--Colin Mason-->
+<!--https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/-->
+
+<h1>IPO</h1>
+
+<p>Input prompt </p>
+
+<input @bind="InputString "/>
+
+<button class="btn btn-primary" @onclick="DoProcessing">Do it</button>
+
+<p>Output: @OutputString </p>
+
+@code
+
+{
+
+    private string InputString { get; set; }
+
+    private string OutputString { get; set; }
+
+    private void DoProcessing()
+
+    {
+
+        double num = double.Parse(InputString);
+
+        num = num * 4; 
+        num = num / 2;
+
+        Output = num.ToString();
+
+    }
+
+}
+        <li class="nav-item px-3">
+
+            <NavLink class="nav-link" href="ipo">
+
+                <span class="oi oi-list-rich" aria-hidden="true"></span> IPO
+
+            </NavLink>
+
+        </li>
