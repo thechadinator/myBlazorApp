@@ -1,7 +1,6 @@
-# Colin Mason: First Blazor Project
+# Colin Mason: First Blazor Project Part 2
 
-Comments are left in Counter.razor file inside of Client/Pages
+Azure Link:
+https://delightful-hill-0ee0d2d10.azurestaticapps.net/
 
-Program Running:
 
-![Screenshot](azureprogram.png)
